@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <h1> BOOKING HOTEL </h1>
+    <h3>Indiquez vos dates de réservations - Toute annulations doit se faire 48H avant</h3>
+    </form>
+    
+<div class="contenant">
+<table id="bloc_1">
+    <tr>
+        <td><img src="img/logo.png" ></td>
+        <td colspan="3"><h3> France - Etranger </h3></td>
+    </tr>
+    <tr>
+        <td><strong>Lieu de Séjour</strong></td>
+        <td colspan="3"><input type="text" id="lieu" placeholder="Lieu de séjour"></td>
+    </tr>
+    <tr>
+        <td><strong>Arrivée</strong><br>
+            <input type="date" id="date_arr">
+        </td>
+        <td colspan="3"><strong>Départ</strong> <br>
+            <input type="date" id="date_dep"></td>
+    </tr>
+    <tr>
+        <td><strong>Adultes</strong></td>
+        <td><input type="number" id="nombre_adu" placeholder="0" value="0" min="0" disabled></td>
+        <td><input type="image" class="plus" src="img/plus.png" onclick="boutonplusadu()"></td>
+        <td><input type="image" class="moins" src="img/moins.png" onclick="boutonmoinsadu()"></td>
+    </tr>
+    <tr>
+        <td><strong>Enfants</strong></td>
+        <td><input type="number" id="nombre_enf" placeholder="0" value="0" min="0"  disabled></td>
+        <td><input type="image" class="plus" src="img/plus.png" onclick="boutonplus()"></td>
+        <td><input type="image" class="moins" src="img/moins.png" onclick="boutonmoins()"></td>
+    </tr>
+    <tr>
+        <td><strong>Chambres</strong></td>
+        <td><input type="number" id="nombre_cha" placeholder="0" value="0" min="0" disabled></td>
+        <td><input type="image" class="plus" src="img/plus.png" onclick="boutonpluscha()"></td>
+        <td><input type="image" class="moins" src="img/moins.png" onclick="boutonmoinscha()"></td>
+    </tr>
+    <tr><td colspan="4"><input type="image" id="rechercher" src="img/rechercher.png" onclick="rechercher()"></td></tr>
+    <tr><td colspan="4"><input type="image" id="effacer" src="img/effacer.png" onclick="effacer()"></td></tr>
+    <tr><td colspan="4"><input type="checkbox" id="check">Je voyage pour le travail</td></tr>
+</table>
+    <div id="bloc_2">
+        <form>
+        <h2>Confirmation Reservation</h2>
+        <div id="confirmation"></div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="script.js"></script> 
+</body>
+<footer>Indiquez vos dates de réservations - Toute annulation doit se faire avant 48H</footer>
+</html>

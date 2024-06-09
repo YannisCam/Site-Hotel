@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("https://secure.s.forbestravelguide.com/img/properties/four-seasons-hotel-bahrain-bay/extra-large/four-seasons-hotel-bahrain-bay-lobby.jpg") ;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.contenant {
+    display: flex;
+    gap: 200px;
+    margin-top: 140px;
+    min-height: calc(100vh - 200px);
+}
+
+#bloc_1{
+    background-color:#69bce6;
+    margin-left: auto;
+    width: 100%;
+    height: 498px;
+    border-radius: 5px;
+}
+
+#bloc_2 {
+    background-color: #69bce6;
+    padding: 10px;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 425px;
+    display: inline-table;
+    height: 499px;
+    border-radius: 5px;
+    
+}
+
+table{
+    padding: 20px;
+    max-width: 400px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+form h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+form h1, form h3{
+    background-color:#69bce6;
+    color: #1632a0; 
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.plus, .moins {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+}
+
+#rechercher, #effacer{
+    width: 130px;
+    height: 40px;
+    margin-top: 3px;
+}
+
+footer{
+    background-color:#69bce6;
+    color: #1632a0; 
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    margin-top: 100px;
+}
